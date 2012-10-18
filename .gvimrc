@@ -1,0 +1,2 @@
+" Disable bells "
+set vb
