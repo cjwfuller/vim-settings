@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/cjwfuller/Downloads/Viscosity.visc'
+let g:netrw_dirhist_2='/Users/cjwfuller/Library/Mobile Documents/com~apple~TextEdit'
+let g:netrw_dirhist_3='/Users/cjwfuller/Library/Mobile Documents/com~apple~TextEdit/Documents'
+let g:netrw_dirhist_4='/Users/cjwfuller/.vim'
+let g:netrw_dirhist_5='/Users/cjwfuller/.mail'
+let g:netrw_dirhist_6='/Users/cjwfuller/.mutt'
+let g:netrw_dirhist_7='/Users/cjwfuller'
+let g:netrw_dirhist_8='/Users/cjwfuller/.vim'
