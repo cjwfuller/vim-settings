@@ -12,6 +12,6 @@ if [ -L ~/.vimrc ]
 then
     echo "Already have ~/.vimrc symlink, we're good"
 else
-    echo "Creating symlink ~/.vimrc, which points to ~/.vim/vimrc"
-    ln -s ~/.vim/vimrc ~/.vimrc
+    echo "Creating symlink ~/.vimrc, which points to ~/.vim/.vimrc"
+    ln -s ~/.vim/.vimrc ~/.vimrc
 fi
