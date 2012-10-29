@@ -25,7 +25,9 @@ autocmd WinLeave * setlocal nocursorline
 set number
 " Higlight screen after 80 chars - need vim v7.3+ "
 set textwidth=132
-set colorcolumn=+1
+if version >= 730
+    set colorcolumn=+1
+endif
 " Stops me using arrow keys "
 noremap <Up> <Nop>
 noremap <Down> <Nop>
