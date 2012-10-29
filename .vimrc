@@ -1,3 +1,4 @@
+source ~/.vim/plugins/comments.vim
 set nocompatible
 set t_Co=256
 set laststatus=2
