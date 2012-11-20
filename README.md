@@ -1,3 +1,6 @@
+    Installation Instructions
+    =========================
+
     cd ~/
     cp -r ~/.vim{,.bak}
     rm -rf ~/.vim
