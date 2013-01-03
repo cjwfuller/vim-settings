@@ -22,9 +22,11 @@ set pastetoggle=<F2>
 set showmode
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
 " Line numbers"
 set number
-" Higlight screen after 132 chars - need vim v7.3+ "
+" Higlight screen after 80 chars - need vim v7.3+ "
 set textwidth=132
 if version >= 730
     set colorcolumn=+1
