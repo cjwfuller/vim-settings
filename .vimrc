@@ -19,6 +19,7 @@ set modifiable
 " When pasting source code, pressing F2 will maintain all the indentation "
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
+inoremap jj <Esc>
 set showmode
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
