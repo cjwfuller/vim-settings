@@ -16,6 +16,7 @@ set shiftwidth=4
 " Spaces, not tabs "
 set expandtab
 set modifiable
+set paste
 " When pasting source code, pressing F2 will maintain all the indentation "
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
