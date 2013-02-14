@@ -23,6 +23,9 @@ inoremap jj <Esc>
 set showmode
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
+filetype on
+filetype plugin on
+filetype indent on
 "autocmd VimEnter * NERDTree
 "autocmd VimEnter * wincmd p
 " Line numbers"
