@@ -9,28 +9,34 @@ let g:Powerline_symbols = 'fancy'
 call pathogen#infect() 
 call pathogen#runtime_append_all_bundles()
 syntax enable
-" Dark version of solarized
+" dark version of solarized "
 set background=dark
 colorscheme solarized
 set smartindent
 set tabstop=4
 set shiftwidth=4
-" Spaces, not tabs
+" Spaces, not tabs "
 set expandtab
 set modifiable
+" When pasting source code, pressing F2 will maintain all the indentation "
+"nnoremap <F2> :set invpaste paste?<CR>
+"set pastetoggle=<F2>
+"inoremap jj <Esc>
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 filetype on
 filetype plugin on
 filetype indent on
-" Line numbers by default "
+"autocmd VimEnter * NERDTree
+"autocmd VimEnter * wincmd p
+" Line numbers"
 set number
-" Highlight screen after 132 chars - need vim v7.3+
+" Higlight screen after 80 chars - need vim v7.3+ "
 set textwidth=132
 if version >= 730
     set colorcolumn=+1
 endif
-" Stops me using arrow keys in any mode
+" Stops me using arrow keys "
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
@@ -39,11 +45,14 @@ imap <Up> <Nop>
 imap <Down> <Nop>
 imap <Left> <Nop>
 imap <Right> <Nop>
-" Let backslash be a utility key
-" \l will show/hide line numbers
 nmap \l :setlocal number!<CR>
-" \o will enable/disable paste mode
 nmap \o :set paste!<CR>
 set showmode
 set cursorline
 set cursorcolumn
+" Highlight as you search
+set incsearch
+set ignorecase
+set smartcase
+set hlsearch
+nmap \q :nohlsearch<CR>
