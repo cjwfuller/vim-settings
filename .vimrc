@@ -1,4 +1,6 @@
+let g:closetag_html_style=1 
 source ~/.vim/plugins/comments.vim
+source ~/.vim/plugins/closetag.vim 
 set nocompatible
 set t_Co=256
 set laststatus=2
