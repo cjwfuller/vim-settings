@@ -12,7 +12,7 @@ syntax enable
 " dark version of solarized "
 set background=dark
 colorscheme solarized
-set smartindent
+"set smartindent
 set tabstop=4
 set shiftwidth=4
 " Spaces, not tabs "
