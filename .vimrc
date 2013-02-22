@@ -4,7 +4,7 @@ source ~/.vim/plugins/closetag.vim
 set nocompatible
 set t_Co=256
 set laststatus=2
-let g:solarized_termcolors=256
+let g:solarized_termcolors=16
 let g:Powerline_symbols = 'fancy'
 call pathogen#infect() 
 call pathogen#runtime_append_all_bundles()
