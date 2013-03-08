@@ -12,7 +12,8 @@ syntax enable
 " dark version of solarized "
 set background=dark
 colorscheme solarized
-"set smartindent
+" Make the sign column (gutter) pretty "
+highlight SignColumn ctermbg=None
 set tabstop=4
 set shiftwidth=4
 " Spaces, not tabs "
@@ -23,8 +24,6 @@ autocmd WinLeave * setlocal nocursorline
 filetype on
 filetype plugin on
 filetype indent on
-"autocmd VimEnter * NERDTree
-"autocmd VimEnter * wincmd p
 " Line numbers"
 set number
 " Higlight screen after 80 chars - need vim v7.3+ "
