@@ -21,12 +21,13 @@ set expandtab
 set modifiable
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
+" Turn on spell check for TeX files "
+autocmd BufNewFile,BufRead *.tex set spell
 filetype on
 filetype plugin on
 filetype indent on
 " Line numbers"
 set number
-" Higlight screen after 80 chars - need vim v7.3+ "
 set textwidth=132
 if version >= 730
     set colorcolumn=+1
