@@ -1,6 +1,4 @@
 #!/bin/bash
-# Taken from https://github.com/fuhrysteve/vim-settings
-
 if [ -f ~/.vimrc ] && [ ! -L ~/.vimrc ]
 then
     echo "Backing up existing ~/.vimrc to ~/.vimrc.bak"
@@ -15,3 +13,11 @@ else
     echo "Creating symlink ~/.vimrc, which points to ~/.vim/.vimrc"
     ln -s ~/.vim/.vimrc ~/.vimrc
 fi
+
+if [ ! -d ~/src ]; then
+    mkdir src
+fi
+cd ~/src
+git clone https://github.com/hallettj/jslint.vim.git
+cd  jslint.vim
+rake install
