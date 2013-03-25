@@ -13,11 +13,3 @@ else
     echo "Creating symlink ~/.vimrc, which points to ~/.vim/.vimrc"
     ln -s ~/.vim/.vimrc ~/.vimrc
 fi
-
-if [ ! -d ~/src ]; then
-    mkdir src
-fi
-cd ~/src
-git clone https://github.com/hallettj/jslint.vim.git
-cd  jslint.vim
-rake install
