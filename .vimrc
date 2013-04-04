@@ -32,6 +32,8 @@ set textwidth=132
 if version >= 730
     set colorcolumn=+1
 endif
+" Vim on OSX seems to not show the ruler by default "
+set ruler
 " Stops me using arrow keys "
 noremap <Up> <Nop>
 noremap <Down> <Nop>
