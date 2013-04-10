@@ -84,3 +84,11 @@ else
   nmap gcc guu~h
   vmap gc gu~h
 endif
+" Save undo's after file closes
+set undofile                " 
+" where to save undo histories
+set undodir=$HOME/.vim/undo "
+" how many undos
+set undolevels=1000
+" number of lines to save for undo
+set undoreload=10000
