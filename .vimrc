@@ -85,11 +85,14 @@ else
   nmap gcc guu~h
   vmap gc gu~h
 endif
-" Save undo's after file closes
-set undofile                " 
-" where to save undo histories
-set undodir=$HOME/.vim/undo "
-" how many undos
-set undolevels=1000
-" number of lines to save for undo
-set undoreload=10000
+" Persistent undo - only works in later version of vim
+if version >= 730
+    " Save undo's after file closes
+    set undofile                " 
+    " where to save undo histories
+    set undodir=$HOME/.vim/undo "
+    " how many undos
+    set undolevels=1000
+    " number of lines to save for undo
+    set undoreload=10000
+endif
