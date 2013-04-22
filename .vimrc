@@ -33,6 +33,8 @@ set textwidth=132
 if version >= 730
     set colorcolumn=+1
 endif
+" Vim on OSX seems to not show the ruler by default "
+set ruler
 " Stops me using arrow keys "
 noremap <Up> <Nop>
 noremap <Down> <Nop>
@@ -83,3 +85,11 @@ else
   nmap gcc guu~h
   vmap gc gu~h
 endif
+" Save undo's after file closes
+set undofile                " 
+" where to save undo histories
+set undodir=$HOME/.vim/undo "
+" how many undos
+set undolevels=1000
+" number of lines to save for undo
+set undoreload=10000
