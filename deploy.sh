@@ -1,4 +1,7 @@
 #!/bin/bash
+
+command -v vim > /dev/null 2>&1 || { echo >&2 "vim is not installed.  Aborting."; exit 1; }
+
 if [ -f ~/.vimrc ] && [ ! -L ~/.vimrc ]
 then
     echo "Backing up existing ~/.vimrc to ~/.vimrc.bak"
