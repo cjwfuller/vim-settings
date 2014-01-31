@@ -47,6 +47,7 @@ call vundle#begin()
 
 Plugin 'airblade/vim-gitgutter'
 Plugin 'xsbeats/vim-blade'
+Plugin 'severin-lemaignan/vim-minimap'
 
 Bundle 'cakebaker/scss-syntax.vim'
 
