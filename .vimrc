@@ -111,6 +111,8 @@ if has("autocmd")
 
 	" Turn on spell check for TeX files "
 	autocmd BufNewFile,BufRead *.tex set spell spelllang=en_gb
+
+	autocmd VimEnter * Minimap
 endif
 
 highlight ExtraWhitespace ctermbg=red guibg=red
