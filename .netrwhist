@@ -1,5 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/private/tmp/git-test'
 let g:netrw_dirhist_2='/Users/cjwfuller/Code/outbreak/app/views/statistics'
 let g:netrw_dirhist_3='/Users/cjwfuller/Code/outbreak/app/views/locations'
+let g:netrw_dirhist_4='/var/www/gousto2core/app'
+let g:netrw_dirhist_5='/var/www/gousto2core/app/views'
+let g:netrw_dirhist_6='/var/www/gousto2core/app/views/emails'
+let g:netrw_dirhist_7='/var/www/gousto2core/app/views/emails/auth'
