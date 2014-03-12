@@ -15,9 +15,6 @@ set background=light
 colorscheme github
 " Make the sign column (gutter) pretty "
 highlight SignColumn ctermbg=None
-" Four spaces for a tab "
-set tabstop=4
-set shiftwidth=4
 " Two spaces for a tab for Ruby stuff "
 autocmd BufNewFile,BufRead *.rb set tabstop=2
 autocmd BufNewFile,BufRead *.rb set shiftwidth=2
