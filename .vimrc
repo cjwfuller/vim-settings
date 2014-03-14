@@ -11,8 +11,8 @@ call pathogen#infect()
 call pathogen#runtime_append_all_bundles()
 syntax enable
 " dark version of solarized "
-set background=dark
-colorscheme solarized
+set background=light
+colorscheme github
 " Make the sign column (gutter) pretty "
 highlight SignColumn ctermbg=None
 " Four spaces for a tab "
