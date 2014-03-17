@@ -1,13 +1,13 @@
 let g:closetag_html_style=1 
 source ~/.vim/plugins/comments.vim
-source ~/.vim/plugins/closetag.vim 
-source ~/.vim/plugins/javascript.vim 
+source ~/.vim/plugins/closetag.vim
+source ~/.vim/plugins/javascript.vim
 set nocompatible
 set t_Co=256
 set laststatus=2
 let g:solarized_termcolors=16
 let g:Powerline_symbols = 'fancy'
-call pathogen#infect() 
+call pathogen#infect()
 call pathogen#runtime_append_all_bundles()
 syntax enable
 " dark version of solarized "
@@ -20,9 +20,6 @@ autocmd BufNewFile,BufRead *.rb set tabstop=2
 autocmd BufNewFile,BufRead *.rb set shiftwidth=2
 autocmd BufNewFile,BufRead *.haml set tabstop=2
 autocmd BufNewFile,BufRead *.haml set shiftwidth=2
-" Spaces, not tabs "
-set expandtab
-set modifiable
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 " Turn on spell check for TeX files "
@@ -38,6 +35,8 @@ if version >= 730
 endif
 " Vim on OSX seems to not show the ruler by default "
 set ruler
+:highlight ExtraWhitespace ctermbg=red guibg=red
+:match ExtraWhitespace /\s\+$/
 " Stops me using arrow keys "
 noremap <Up> <Nop>
 noremap <Down> <Nop>
