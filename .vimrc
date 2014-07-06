@@ -118,29 +118,11 @@ set statusline+=%*
 set statusline+=%h      "help file flag
 set statusline+=%y      "filetype
 
-"read only flag
-"set statusline+=%#identifier#
-"set statusline+=%r
-"set statusline+=%*
-"
 ""modified flag
 set statusline+=%#identifier#
 set statusline+=%m
 set statusline+=%*
 
-"display a warning if &et is wrong, or we have mixed-indenting
-"set statusline+=%#error#
-"set statusline+=%{StatuslineTabWarning()}
-"set statusline+=%*
-"
-"set statusline+=%{StatuslineTrailingSpaceWarning()}
-"
-"set statusline+=%{StatuslineLongLineWarning()}
-"
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
-"
 ""display a warning if &paste is set
 set statusline+=%#error#
 set statusline+=%{&paste?'[paste]':''}
