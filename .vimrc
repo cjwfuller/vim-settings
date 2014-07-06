@@ -1,4 +1,4 @@
-let g:closetag_html_style=1 
+let g:closetag_html_style=1
 source ~/.vim/plugins/comments.vim
 source ~/.vim/plugins/closetag.vim
 source ~/.vim/plugins/javascript.vim
@@ -17,7 +17,7 @@ set background=light
 colorscheme github
 " Make the sign column (gutter) pretty "
 highlight SignColumn ctermbg=None
-" Two spaces for a tab for Ruby stuff "
+" Two spaces instead of a tab in Ruby "
 autocmd BufNewFile,BufRead *.rb set tabstop=2
 autocmd BufNewFile,BufRead *.rb set shiftwidth=2
 autocmd BufNewFile,BufRead *.haml set tabstop=2
