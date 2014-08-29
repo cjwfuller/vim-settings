@@ -7,6 +7,7 @@ set t_Co=256
 set laststatus=2
 set noeol
 set binary
+set eol
 let g:solarized_termcolors=16
 let g:Powerline_symbols = 'fancy'
 call pathogen#infect()
