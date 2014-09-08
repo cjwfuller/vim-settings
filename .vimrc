@@ -1,5 +1,7 @@
 let g:closetag_html_style=1
 let jshint_options_file = '~/.vim/jshint_options.js'
+let g:NERDTreeWinSize=50
+
 source ~/.vim/plugins/comments.vim
 source ~/.vim/plugins/closetag.vim
 source ~/.vim/plugins/javascript.vim
