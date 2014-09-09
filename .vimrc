@@ -2,6 +2,26 @@ let g:closetag_html_style=1
 let jshint_options_file = '~/.vim/jshint_options.js'
 let g:NERDTreeWinSize=50
 
+" ----------------------------------------------------------------------------
+" Key mapping
+" ----------------------------------------------------------------------------
+"
+
+" Don't use arrow keys
+map <Up> <Nop>
+map <Down> <Nop>
+map <Left> <Nop>
+map <Right> <Nop>
+imap <Up> <Nop>
+imap <Down> <Nop>
+imap <Left> <Nop>
+imap <Right> <Nop>
+
+" Shortcuts
+map \l :setlocal number!<CR>
+map \o :set paste!<CR>
+map <C-l> :w !php -l<CR>
+
 source ~/.vim/plugins/comments.vim
 source ~/.vim/plugins/closetag.vim
 source ~/.vim/plugins/javascript.vim
@@ -47,18 +67,7 @@ endif
 set ruler
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :match ExtraWhitespace /\s\+$/
-" Stops me using arrow keys "
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
-imap <Up> <Nop>
-imap <Down> <Nop>
-imap <Left> <Nop>
-imap <Right> <Nop>
-nmap \l :setlocal number!<CR>
-nmap \o :set paste!<CR>
-map <C-l> :w !php -l<CR>
+
 set showmode
 set cursorline
 set cursorcolumn
