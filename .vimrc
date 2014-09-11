@@ -21,6 +21,7 @@ imap <Right> <Nop>
 map \l :setlocal number!<CR>
 map \o :set paste!<CR>
 map <C-l> :w !php -l<CR>
+map \q :nohlsearch<CR>
 
 source ~/.vim/plugins/comments.vim
 source ~/.vim/plugins/closetag.vim
@@ -76,7 +77,6 @@ set incsearch
 set ignorecase
 set smartcase
 set hlsearch
-nmap \q :nohlsearch<CR>
 " Persistent undo - only works in later version of vim
 if version >= 730
     " Save undo's after file closes "
