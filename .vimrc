@@ -23,6 +23,13 @@ map \o :set paste!<CR>
 map <C-l> :w !php -l<CR>
 map \q :nohlsearch<CR>
 
+"
+" Vundle plugins
+"
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
 source ~/.vim/plugins/comments.vim
 source ~/.vim/plugins/closetag.vim
 source ~/.vim/plugins/javascript.vim
