@@ -29,6 +29,7 @@ map \q :nohlsearch<CR>
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+Plugin 'airblade/vim-gitgutter'
 
 source ~/.vim/plugins/comments.vim
 source ~/.vim/plugins/closetag.vim
