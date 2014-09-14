@@ -26,9 +26,9 @@ map \q :nohlsearch<CR>
 "
 " Vundle plugins
 "
-
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
 Plugin 'airblade/vim-gitgutter'
 
 source ~/.vim/plugins/comments.vim
