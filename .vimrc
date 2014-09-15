@@ -52,7 +52,7 @@ colorscheme github
 " Make the sign column (gutter) pretty "
 highlight SignColumn ctermbg=None
 " Two spaces instead of a tab in Ruby "
-:command NT NERDTree
+command NT NERDTree
 autocmd BufNewFile,BufRead *.rb set tabstop=2
 autocmd BufNewFile,BufRead *.rb set shiftwidth=2
 autocmd BufNewFile,BufRead *.haml set tabstop=2
