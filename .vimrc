@@ -76,8 +76,8 @@ if version >= 730
 endif
 " Vim on OSX seems to not show the ruler by default "
 set ruler
-:highlight ExtraWhitespace ctermbg=red guibg=red
-:match ExtraWhitespace /\s\+$/
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
 
 set showmode
 set cursorline
