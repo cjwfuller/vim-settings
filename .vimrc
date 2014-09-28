@@ -57,7 +57,7 @@ imap <Left> <Nop>
 imap <Right> <Nop>
 nmap \l :setlocal number!<CR>
 nmap \o :set paste!<CR>
-map <C-B> :w !php -l<CR>
+map <C-l> :w !php -l<CR>
 set showmode
 set cursorline
 set cursorcolumn
