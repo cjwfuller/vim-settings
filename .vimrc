@@ -14,7 +14,6 @@ let g:Powerline_symbols = 'fancy'
 call pathogen#infect()
 call pathogen#runtime_append_all_bundles()
 syntax enable
-" dark version of solarized "
 set background=light
 colorscheme github
 " Make the sign column (gutter) pretty "
