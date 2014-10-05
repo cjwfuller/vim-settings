@@ -78,11 +78,6 @@ set statusline =%#identifier#
 set statusline+=[%t]    "tail of the filename
 set statusline+=%*
 
-"display a warning if fileformat isnt unix
-"set statusline+=%#warningmsg#
-"set statusline+=%{&ff!='unix'?'['.&ff.']':''}
-"set statusline+=%*
-"
 ""display a warning if file encoding isnt utf-8
 set statusline+=%#warningmsg#
 set statusline+=%{(&fenc!='utf-8'&&&fenc!='')?'['.&fenc.']':''}
