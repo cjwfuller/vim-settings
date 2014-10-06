@@ -9,6 +9,7 @@ set laststatus=2
 set noeol
 set binary
 set eol
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:solarized_termcolors=16
 let g:Powerline_symbols = 'fancy'
 call pathogen#infect()
