@@ -1,5 +1,7 @@
 let g:closetag_html_style=1
 let g:NERDTreeWinSize=50
+let g:solarized_termcolors=16
+let g:Powerline_symbols = 'fancy'
 
 " ----------------------------------------------------------------------------
 " Key mapping
@@ -73,8 +75,6 @@ autocmd FileType python setlocal textwidth=79 colorcolumn=+1
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
-let g:solarized_termcolors=16
-let g:Powerline_symbols = 'fancy'
 execute pathogen#infect()
 syntax enable
 colorscheme github
