@@ -54,7 +54,6 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 set showmode
 set cursorline
 set cursorcolumn
-" Highlight as you search
 set incsearch
 set ignorecase
 set smartcase
