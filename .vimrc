@@ -59,14 +59,16 @@ set ignorecase
 set smartcase
 set hlsearch
 set number
-set textwidth=132
 set background=light
 set ruler
 set undofile
 set undodir=$HOME/.vim/.undo
 set undolevels=1000
 set undoreload=10000
-set colorcolumn=+1
+
+" Show vertical bar at column widths depending on the language
+autocmd FileType php setlocal textwidth=120 colorcolumn=+1
+autocmd FileType python setlocal textwidth=79 colorcolumn=+1
 
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
