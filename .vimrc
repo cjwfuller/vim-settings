@@ -69,7 +69,7 @@ set undolevels=1000
 set undoreload=10000
 
 autocmd FileType php setlocal textwidth=120 colorcolumn=+1
-autocmd FileType python setlocal textwidth=79 colorcolumn=+1
+autocmd FileType python setlocal textwidth=79 colorcolumn=+1 expandtab tabstop=4 shiftwidth=4
 
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
@@ -84,8 +84,6 @@ autocmd BufNewFile,BufRead *.rb set tabstop=2
 autocmd BufNewFile,BufRead *.rb set shiftwidth=2
 autocmd BufNewFile,BufRead *.haml set tabstop=2
 autocmd BufNewFile,BufRead *.haml set shiftwidth=2
-" 4 spaces for a tab in Python "
-autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 " Turn on spell check for TeX files "
