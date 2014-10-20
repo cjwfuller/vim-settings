@@ -71,6 +71,9 @@ set undoreload=10000
 autocmd FileType php setlocal textwidth=120 colorcolumn=+1
 autocmd FileType python setlocal textwidth=79 colorcolumn=+1 expandtab tabstop=4 shiftwidth=4
 
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
@@ -79,11 +82,6 @@ syntax enable
 colorscheme github
 " Make the sign column (gutter) pretty "
 highlight SignColumn ctermbg=None
-" Two spaces instead of a tab in Ruby "
-autocmd BufNewFile,BufRead *.rb set tabstop=2
-autocmd BufNewFile,BufRead *.rb set shiftwidth=2
-autocmd BufNewFile,BufRead *.haml set tabstop=2
-autocmd BufNewFile,BufRead *.haml set shiftwidth=2
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 " Turn on spell check for TeX files "
@@ -91,7 +89,3 @@ autocmd BufNewFile,BufRead *.tex set spell
 filetype off
 filetype plugin on
 filetype indent on
-" Line numbers"
-
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
