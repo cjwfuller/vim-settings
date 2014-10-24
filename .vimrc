@@ -12,10 +12,10 @@ set noeol
 set binary
 set eol
 set mouse=a
+set backspace=2
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:solarized_termcolors=16
 let g:Powerline_symbols = 'fancy'
-call pathogen#infect()
 call pathogen#runtime_append_all_bundles()
 syntax enable
 set background=light
