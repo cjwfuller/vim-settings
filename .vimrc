@@ -69,6 +69,9 @@ set undolevels=1000
 set undoreload=10000
 set colorcolumn=+1
 
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
 let g:solarized_termcolors=16
 let g:Powerline_symbols = 'fancy'
 execute pathogen#infect()
