@@ -77,35 +77,40 @@ set undoreload=10000
 set autoindent
 set showcmd
 
-" When editing a file, always jump to the last known cursor position.
-" Don't do it when the position is invalid or when inside an event handler
-" (happens when dropping a file on gvim).
-" Also don't do it when the mark is in the first line, that is the default
-" position when opening a file.
-autocmd BufReadPost *
-	\ if line("'\"") > 1 && line("'\"") <= line("$") |
-	\   exe "normal! g`\"" |
-	\ endif
-augroup END
+" only do when compiled with support for autocommands.
+if has("autocmd")
+	" When editing a file, always jump to the last known cursor position.
+	" Don't do it when the position is invalid or when inside an event handler
+	" (happens when dropping a file on gvim).
+	" Also don't do it when the mark is in the first line, that is the default
+	" position when opening a file.
+	autocmd BufReadPost *
+		\ if line("'\"") > 1 && line("'\"") <= line("$") |
+		\   exe "normal! g`\"" |
+		\ endif
+	augroup END
 
-autocmd FileType php setlocal textwidth=120 colorcolumn=+1
-autocmd FileType python setlocal textwidth=79 colorcolumn=+1 expandtab tabstop=4 shiftwidth=4
+	autocmd FileType php setlocal textwidth=120 colorcolumn=+1
+	autocmd FileType python setlocal textwidth=79 colorcolumn=+1 expandtab tabstop=4 shiftwidth=4
+
+	autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+	autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
+	autocmd WinEnter * setlocal cursorline
+	autocmd WinLeave * setlocal nocursorline
+
+	" Turn on spell check for TeX files "
+	autocmd BufNewFile,BufRead *.tex set spell spelllang=en_gb
+endif
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
-
-autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 execute pathogen#infect()
 syntax enable
 colorscheme github
 " Make the sign column (gutter) pretty "
 highlight SignColumn ctermbg=None
-autocmd WinEnter * setlocal cursorline
-autocmd WinLeave * setlocal nocursorline
-" Turn on spell check for TeX files "
-autocmd BufNewFile,BufRead *.tex set spell spelllang=en_gb
 filetype off
 filetype plugin on
 filetype indent on
