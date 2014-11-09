@@ -22,6 +22,8 @@ imap <Right> <Nop>
 " Shortcuts
 map \l :setlocal number!<CR>
 map \o :set paste!<CR>
+map \nm :set mouse=<CR>
+map \m :set mouse=a<CR>
 map <C-l> :w !php -l<CR>
 map \q :nohlsearch<CR>
 nnoremap <F5> :GundoToggle<CR>
