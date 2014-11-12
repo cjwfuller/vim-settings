@@ -24,6 +24,7 @@ map \o :set paste!<CR>
 map <C-l> :w !php -l<CR>
 map \q :nohlsearch<CR>
 nnoremap <F5> :GundoToggle<CR>
+nnoremap ; :
 
 " Commands
 command NT NERDTree
