@@ -1,5 +1,7 @@
 let g:closetag_html_style=1
 let g:NERDTreeWinSize=50
+let g:solarized_termcolors=16
+let g:Powerline_symbols = 'fancy'
 
 " ----------------------------------------------------------------------------
 " Key mapping
@@ -55,38 +57,32 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 set showmode
 set cursorline
 set cursorcolumn
-" Highlight as you search
 set incsearch
 set ignorecase
 set smartcase
 set hlsearch
 set number
-set textwidth=132
 set background=light
 set ruler
 set undofile
 set undodir=$HOME/.vim/.undo
 set undolevels=1000
 set undoreload=10000
-set colorcolumn=+1
+
+autocmd FileType php setlocal textwidth=120 colorcolumn=+1
+autocmd FileType python setlocal textwidth=79 colorcolumn=+1 expandtab tabstop=4 shiftwidth=4
+
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
 
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
-let g:solarized_termcolors=16
-let g:Powerline_symbols = 'fancy'
 execute pathogen#infect()
 syntax enable
 colorscheme github
 " Make the sign column (gutter) pretty "
 highlight SignColumn ctermbg=None
-" Two spaces instead of a tab in Ruby "
-autocmd BufNewFile,BufRead *.rb set tabstop=2
-autocmd BufNewFile,BufRead *.rb set shiftwidth=2
-autocmd BufNewFile,BufRead *.haml set tabstop=2
-autocmd BufNewFile,BufRead *.haml set shiftwidth=2
-" 4 spaces for a tab in Python "
-autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 " Turn on spell check for TeX files "
@@ -94,7 +90,3 @@ autocmd BufNewFile,BufRead *.tex set spell
 filetype off
 filetype plugin on
 filetype indent on
-" Line numbers"
-
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
