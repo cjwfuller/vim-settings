@@ -33,6 +33,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'airblade/vim-gitgutter'
+Plugin 'xsbeats/vim-blade'
 
 source ~/.vim/plugins/comments.vim
 source ~/.vim/plugins/closetag.vim
