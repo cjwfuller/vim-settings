@@ -48,7 +48,6 @@ source ~/.vim/plugins/javascript.vim
 "
 " Set options
 "
-
 set nocompatible
 set t_Co=256
 set laststatus=2
@@ -74,6 +73,7 @@ set undofile
 set undodir=$HOME/.vim/.undo
 set undolevels=1000
 set undoreload=10000
+set history=50
 set autoindent
 set showcmd
 
