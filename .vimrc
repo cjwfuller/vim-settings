@@ -90,7 +90,7 @@ highlight SignColumn ctermbg=None
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 " Turn on spell check for TeX files "
-autocmd BufNewFile,BufRead *.tex set spell
+autocmd BufNewFile,BufRead *.tex set spell spelllang=en_gb
 filetype off
 filetype plugin on
 filetype indent on
