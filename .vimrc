@@ -72,6 +72,7 @@ set undofile
 set undodir=$HOME/.vim/.undo
 set undolevels=1000
 set undoreload=10000
+set autoindent
 
 autocmd FileType php setlocal textwidth=120 colorcolumn=+1
 autocmd FileType python setlocal textwidth=79 colorcolumn=+1 expandtab tabstop=4 shiftwidth=4
