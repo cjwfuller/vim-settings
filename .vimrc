@@ -55,7 +55,9 @@ set laststatus=2
 set noeol
 set binary
 set eol
-set mouse=a
+if has('mouse')
+	set mouse=a
+endif
 set backspace=2
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 set showmode
