@@ -19,6 +19,13 @@ imap <Down> <Nop>
 imap <Left> <Nop>
 imap <Right> <Nop>
 
+" Tab/shift-tab should indent/unindent
+nnoremap <Tab> >>_
+nnoremap <S-Tab> <<_
+inoremap <S-Tab> <C-D>
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
+
 " Shortcuts
 map \l :setlocal number!<CR>
 map \o :set paste!<CR>
