@@ -41,6 +41,8 @@ call vundle#begin()
 Plugin 'airblade/vim-gitgutter'
 Plugin 'xsbeats/vim-blade'
 
+Bundle 'cakebaker/scss-syntax.vim'
+
 source ~/.vim/plugins/comments.vim
 source ~/.vim/plugins/closetag.vim
 source ~/.vim/plugins/javascript.vim
