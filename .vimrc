@@ -101,7 +101,7 @@ if has("autocmd")
 	augroup END
 
 	autocmd FileType php setlocal textwidth=120 colorcolumn=+1
-	autocmd FileType python setlocal textwidth=79 colorcolumn=+1 expandtab tabstop=4 shiftwidth=4
+	autocmd FileType python setlocal textwidth=100 colorcolumn=+1 expandtab tabstop=4 shiftwidth=4
 
 	autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 	autocmd InsertLeave * if pumvisible() == 0|pclose|endif
