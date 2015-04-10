@@ -39,6 +39,10 @@ nnoremap ; :
 " Commands
 command NT NERDTree
 
+" delimitMate "
+let delimitMate_nesting_quotes = ['"','`']
+au FileType python let b:delimitMate_expand_inside_quotes = 1
+
 "
 " Vundle plugins
 "
