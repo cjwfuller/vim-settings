@@ -35,6 +35,7 @@ map <C-l> :w !php -l<CR>
 map \q :nohlsearch<CR>
 nnoremap <F5> :GundoToggle<CR>
 nnoremap ; :
+nnoremap <Leader>rtw :%s/\s\+$//e<CR>
 
 " Commands
 command NT NERDTree
