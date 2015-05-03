@@ -52,7 +52,6 @@ call vundle#begin()
 
 Plugin 'airblade/vim-gitgutter'
 Plugin 'xsbeats/vim-blade'
-Plugin 'severin-lemaignan/vim-minimap'
 
 Bundle 'cakebaker/scss-syntax.vim'
 
@@ -116,8 +115,6 @@ if has("autocmd")
 
 	" Turn on spell check for TeX files "
 	autocmd BufNewFile,BufRead *.tex set spell spelllang=en_gb
-
-	autocmd VimEnter * Minimap
 endif
 
 highlight ExtraWhitespace ctermbg=red guibg=red
