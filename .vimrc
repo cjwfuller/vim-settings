@@ -122,7 +122,7 @@ match ExtraWhitespace /\s\+$/
 
 execute pathogen#infect()
 syntax enable
-colorscheme github
+colorscheme atom-dark-256
 " Make the sign column (gutter) pretty "
 highlight SignColumn ctermbg=None
 filetype off
