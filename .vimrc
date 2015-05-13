@@ -74,7 +74,6 @@ endif
 set backspace=2
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 set showmode
-set cursorline
 set cursorcolumn
 set incsearch
 set ignorecase
