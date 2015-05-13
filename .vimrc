@@ -125,6 +125,7 @@ colorscheme atom-dark-256
 " Make the sign column (gutter) pretty "
 highlight SignColumn ctermbg=None
 filetype off
+highlight ColorColumn ctermbg=green
 filetype plugin on
 filetype indent on
 
