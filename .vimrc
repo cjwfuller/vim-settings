@@ -123,7 +123,7 @@ syntax enable
 colorscheme atom-dark-256
 " Make the sign column (gutter) pretty "
 highlight SignColumn ctermbg=None
-highlight ColorColumn ctermbg=green
+highlight ColorColumn term=underline cterm=NONE ctermbg=59 ctermfg=fg gui=NONE guibg=#293739 guifg=fg
 filetype on
 filetype plugin on
 filetype indent on
