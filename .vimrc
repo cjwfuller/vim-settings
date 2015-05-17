@@ -88,6 +88,7 @@ set undoreload=10000
 set history=50
 set autoindent
 set showcmd
+set spell spelllang=en_gb
 
 " only do when compiled with support for autocommands.
 if has("autocmd")
