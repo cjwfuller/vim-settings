@@ -112,8 +112,6 @@ if has("autocmd")
 	autocmd WinEnter * setlocal cursorline
 	autocmd WinLeave * setlocal nocursorline
 
-	" Turn on spell check for TeX files "
-	autocmd BufNewFile,BufRead *.tex set spell spelllang=en_gb
 endif
 
 highlight ExtraWhitespace ctermbg=red guibg=red
