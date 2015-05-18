@@ -112,6 +112,7 @@ if has("autocmd")
 	autocmd WinEnter * setlocal cursorline
 	autocmd WinLeave * setlocal nocursorline
 
+	autocmd BufNewFile,BufRead git-rebase-todo set nospell
 endif
 
 highlight ExtraWhitespace ctermbg=red guibg=red
