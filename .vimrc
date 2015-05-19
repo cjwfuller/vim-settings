@@ -51,6 +51,8 @@ call vundle#begin()
 
 Plugin 'airblade/vim-gitgutter'
 Plugin 'xsbeats/vim-blade'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 Bundle 'cakebaker/scss-syntax.vim'
 
