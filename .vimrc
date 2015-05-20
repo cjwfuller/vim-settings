@@ -39,6 +39,7 @@ nnoremap <Leader>rtw :%s/\s\+$//e<CR>
 " Commands
 map <C-n> :NERDTreeToggle<CR>
 map <C-g> :GundoToggle<CR>
+map <C-m> :MR<CR>
 
 " delimitMate "
 let delimitMate_nesting_quotes = ['"','`']
