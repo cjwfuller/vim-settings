@@ -32,12 +32,12 @@ map \nm :set mouse=<CR>
 map \m :set mouse=a<CR>
 map <C-l> :w !php -l<CR>
 map \q :nohlsearch<CR>
-nnoremap <F5> :GundoToggle<CR>
 nnoremap ; :
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
 
 " Commands
 map <C-n> :NERDTreeToggle<CR>
+map <C-g> :GundoToggle<CR>
 
 " delimitMate "
 let delimitMate_nesting_quotes = ['"','`']
