@@ -93,6 +93,7 @@ set history=50
 set autoindent
 set showcmd
 set spell spelllang=en_gb
+set complete+=kspell
 
 " only do when compiled with support for autocommands.
 if has("autocmd")
