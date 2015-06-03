@@ -1,3 +1,6 @@
+" ----------------------------------------------------------------------------
+" Global variables
+" ----------------------------------------------------------------------------
 let g:closetag_html_style=1
 let g:NERDTreeWinSize=50
 let g:solarized_termcolors=16
@@ -5,9 +8,39 @@ let g:airline#extensions#whitespace#mixed_indent_algo=1
 let g:gundo_right=1
 
 " ----------------------------------------------------------------------------
+" Set options
+" ----------------------------------------------------------------------------
+set nocompatible
+set t_Co=256
+set laststatus=2
+set noeol
+set binary
+set eol
+set backspace=2
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+set showmode
+set cursorcolumn
+set incsearch
+set ignorecase
+set smartcase
+set hlsearch
+set number
+set background=light
+set ruler
+set undofile
+set undodir=$HOME/.vim/.undo
+set undolevels=1000
+set undoreload=10000
+set history=50
+set autoindent
+set showcmd
+if has('mouse')
+	set mouse=a
+endif
+
+" ----------------------------------------------------------------------------
 " Key mapping
 " ----------------------------------------------------------------------------
-"
 
 " Don't use arrow keys
 map <Up> <Nop>
@@ -61,38 +94,6 @@ Bundle 'cakebaker/scss-syntax.vim'
 source ~/.vim/plugins/comments.vim
 source ~/.vim/plugins/closetag.vim
 source ~/.vim/plugins/javascript.vim
-
-"
-" Set options
-"
-set nocompatible
-set t_Co=256
-set laststatus=2
-set noeol
-set binary
-set eol
-if has('mouse')
-	set mouse=a
-endif
-set backspace=2
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip
-set showmode
-set cursorcolumn
-set incsearch
-set ignorecase
-set smartcase
-set hlsearch
-set number
-set background=light
-set ruler
-set undofile
-set undodir=$HOME/.vim/.undo
-set undolevels=1000
-set undoreload=10000
-set history=50
-set autoindent
-set showcmd
-set spell spelllang=en_gb
 
 " only do when compiled with support for autocommands.
 if has("autocmd")
