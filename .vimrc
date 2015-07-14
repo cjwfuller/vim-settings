@@ -3,6 +3,7 @@
 " ----------------------------------------------------------------------------
 let g:closetag_html_style=1
 let g:NERDTreeWinSize=50
+let NERDTreeIgnore = ['\.pyc$']
 let g:solarized_termcolors=16
 let g:airline#extensions#whitespace#mixed_indent_algo=1
 let g:gundo_right=1
