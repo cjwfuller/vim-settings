@@ -120,6 +120,8 @@ if has("autocmd")
 	autocmd WinLeave * setlocal nocursorline
 
 	autocmd BufNewFile,BufRead git-rebase-todo set nospell
+
+	autocmd BufWritePre *.{php,py} :%s/\s\+$//e
 endif
 
 highlight ExtraWhitespace ctermbg=red guibg=red
