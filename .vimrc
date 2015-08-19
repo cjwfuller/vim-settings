@@ -69,6 +69,7 @@ map <C-l> :w !php -l<CR>
 map \q :nohlsearch<CR>
 nnoremap ; :
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
+nnoremap <Leader>fle :%s/\r/\r/g<CR>
 
 " Commands
 map <C-n> :NERDTreeToggle<CR>
