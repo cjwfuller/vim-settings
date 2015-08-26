@@ -7,6 +7,10 @@ let NERDTreeIgnore = ['\.pyc$']
 let g:solarized_termcolors=16
 let g:airline#extensions#whitespace#mixed_indent_algo=1
 let g:gundo_right=1
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " ----------------------------------------------------------------------------
 " Set options
@@ -35,6 +39,9 @@ set undoreload=10000
 set history=50
 set autoindent
 set showcmd
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 if has('mouse')
 	set mouse=a
 endif
