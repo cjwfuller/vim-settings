@@ -99,6 +99,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'xsbeats/vim-blade'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'hynek/vim-python-pep8-indent'
 
 Bundle 'cakebaker/scss-syntax.vim'
 
