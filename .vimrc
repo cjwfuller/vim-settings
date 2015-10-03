@@ -88,6 +88,7 @@ map <C-m> :MR<CR>
 " delimitMate "
 let delimitMate_nesting_quotes = ['"','`']
 au FileType python let b:delimitMate_expand_inside_quotes = 1
+au BufNewFile,BufRead *.pl set filetype=prolog
 
 "
 " Vundle plugins
