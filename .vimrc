@@ -48,6 +48,8 @@ if has('mouse')
 	set mouse=a
 endif
 set clipboard=unnamed
+set visualbell
+set t_vb=
 
 " ----------------------------------------------------------------------------
 " Key mapping
