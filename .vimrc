@@ -47,6 +47,7 @@ set statusline+=%*
 if has('mouse')
 	set mouse=a
 endif
+set clipboard=unnamed
 
 " ----------------------------------------------------------------------------
 " Key mapping
