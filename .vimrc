@@ -50,6 +50,8 @@ endif
 set clipboard=unnamed
 set visualbell
 set t_vb=
+set exrc
+set secure
 
 " ----------------------------------------------------------------------------
 " Key mapping
