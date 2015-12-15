@@ -90,6 +90,8 @@ map <C-n> :NERDTreeToggle<CR>
 map <C-g> :GundoToggle<CR>
 map <C-m> :MR<CR>
 
+nmap =j :%!python -m json.tool<CR>
+
 " delimitMate "
 let delimitMate_nesting_quotes = ['"','`']
 au FileType python let b:delimitMate_expand_inside_quotes = 1
