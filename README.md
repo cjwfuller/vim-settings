@@ -1,7 +1,7 @@
 Installation Instructions
 =========================
 
-Deprecated in favour of https://github.com/cjwfuller/dotfiles (deployed via Ansible)
+**Deprecated in favour of https://github.com/cjwfuller/dotfiles (deployed via Ansible)**
 
 <pre>
 mkdir ~/.vim
